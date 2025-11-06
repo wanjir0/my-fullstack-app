@@ -11,11 +11,7 @@ const db = await mysql.createConnection({
   // user: process.env.DB_USER,
   // password: process.env.DB_PASS,
   // database: process.env.DB_NAME
-  host: "localhost",
-  user: "root",
-  password: "macharia@001",
-  database: "denat_school"
-
+ 
 });
 
 db.connect((err) => {
@@ -39,5 +35,6 @@ db.query('SELECT * FROM users', (err, results) => {
 
   }
 );
+
 
 export default db;
